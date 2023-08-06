@@ -41,10 +41,10 @@ function App() {
     }, []);
   return (
     <>
-        <p className="advice-number">Advice # {data ? data.id : "117"}</p>
+        <p className="advice-number">Advice # {data ? data.id : null}</p>
         {/* Quote */}
         <q className="quotes">
-          {data ? data.advice :"It is easy to sit up and take notice, what's difficult is getting up and taking action."}  
+          {data ? data.advice : null}  
         </q>
         {/* Line Section */}
         <div className="line">
